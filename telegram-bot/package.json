@@ -1,0 +1,19 @@
+{
+  "name": "aurora-salon-bot",
+  "version": "1.0.0",
+  "description": "Telegram бот для записи в салон красоты Аврора",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "keywords": ["telegram", "bot", "beauty", "salon"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
