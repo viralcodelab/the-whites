@@ -745,6 +745,57 @@ footer {
     }
 }
 
+@media (max-width: 1024px) {
+    .navbar {
+        top: var(--spacing-12);
+        width: calc(100% - var(--spacing-24));
+    }
+
+    .navbar .container {
+        padding: var(--spacing-8) var(--spacing-16);
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-12);
+    }
+
+    .logo {
+        font-size: var(--text-body);
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-actions {
+        gap: var(--spacing-8);
+        order: 2;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn-signin {
+        font-size: var(--text-caption);
+        padding: var(--spacing-6) var(--spacing-12);
+    }
+
+    .btn-getstarted {
+        font-size: var(--text-caption);
+        padding: var(--spacing-6) var(--spacing-12);
+    }
+
+    .btn-getstarted svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+}
+
 @media (max-width: 768px) {
     :root {
         --spacing-96: 64px;
@@ -753,6 +804,7 @@ footer {
 
     .hero {
         padding: var(--spacing-64) 0;
+        padding-top: 120px;
     }
 
     .hero-content h1 {
@@ -760,11 +812,6 @@ footer {
     }
 
     .hero-features {
-        flex-direction: column;
-        gap: var(--spacing-16);
-    }
-
-    .nav-menu {
         flex-direction: column;
         gap: var(--spacing-16);
     }
